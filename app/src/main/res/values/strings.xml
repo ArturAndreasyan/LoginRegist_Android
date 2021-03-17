@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Homework  2</string>
+    <string name="email_error" />
+    <string name="error_invalid_email" />
+    <string name="password_error" />
+    <string name="error_invalid_password" />
+</resources>

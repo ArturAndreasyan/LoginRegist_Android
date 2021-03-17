@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="255dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/SeaGreen"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+
+
+        android:text="DETAILS FORM" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*First Name"
+        android:layout_below="@+id/text1"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/editfirstname"
+        android:layout_width="166dp"
+        android:layout_height="22dp"
+        android:layout_below="@id/text1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/firstname" />
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Last Name"
+        android:layout_below="@+id/firstname"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/editlastname"
+        android:layout_width="166dp"
+        android:layout_height="22dp"
+        android:layout_below="@id/editfirstname"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/lastname" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Gender"
+        android:layout_below="@+id/lastname"
+        android:layout_marginStart="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age on December 10,2018"
+        android:layout_below="@+id/gender"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="5dp"/>
+
+    <EditText
+        android:id="@+id/editage"
+        android:layout_width="166dp"
+        android:layout_height="22dp"
+        android:layout_below="@id/gender"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/Age" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Age"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="13dp"
+        android:background="@android:color/darker_gray"
+        android:text="SUBMIT"
+
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@id/editlastname"
+        android:layout_toRightOf="@id/gender"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
